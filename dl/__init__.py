@@ -134,8 +134,8 @@ def main():
     git_host = input(f'[?]   🌍 Git host (github.com): ').strip() or f'github.com'
 
     project_repository = f'{git_username}/{project_slug}'
-    project_repository_web = f'https://{git_host}/{git_username}/{project_repository}'
-    project_repository_ssh = f'git@{git_host}:{git_username}/{project_repository}'
+    project_repository_web = f'https://{git_host}/{project_repository}'
+    project_repository_ssh = f'git@{git_host}:{project_repository}'
 
     print(f'[-]   @project-title        = {project_title}')
     print(f'[-]   @project-slug         = {project_slug}')
