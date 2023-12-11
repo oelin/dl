@@ -153,7 +153,7 @@ def main():
         paper_title,
         arxiv_url,
         project_framework,
-        project_repository_ssh,
+        project_repository_web,
         paper_bibtex,
     ))
 
