@@ -13,7 +13,7 @@ Installation
 Install with pipx.
 
 ```sh
-pipx install git+https://github.com/oelin/dl
+pipx install poetry git+https://github.com/oelin/dl
 ```
 
 Usage
