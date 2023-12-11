@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "dl"
+version = "0.1.0"
+description = ""
+authors = ["oelin"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.31.0"
+pyquery = "^2.0.0"
+normality = "^2.5.0"
+
+[tool.poetry.scripts]
+dl = "dl:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
