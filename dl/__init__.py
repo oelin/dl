@@ -130,8 +130,8 @@ def main():
     project_framework = input(f'[?]   🧪 Project framework (PyTorch): ').strip() or 'PyTorch'
     project_dependencies = input(f'[?]   🧩 Project dependencies (space separated): ').strip() or 'black'
 
-    git_username = input(f'[?]   🌍 Git username (kore): ').strip() or 'kore'
-    git_host = input(f'[?]   🌍 Git host (codeberg.org): ').strip() or 'codeberg.org'
+    git_username = input(f'[?]   🌍 Git username: ').strip()
+    git_host = input(f'[?]   🌍 Git host (github.com): ').strip() or 'github.com'
 
     project_repository = f'{git_username}/{project_slug}'
     project_repository_web = f'https://{git_host}/{project_repository}'
