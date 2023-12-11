@@ -130,8 +130,8 @@ def main():
     project_framework = input(f'[?]   🧪 Project framework (PyTorch): ').strip() or 'PyTorch'
     project_dependencies = input(f'[?]   🧩 Project dependencies (space separated): ').strip() or 'black'
 
-    git_username = input(f'[?]   🌍 GIT username (kore): ').strip() or f'kore'
-    git_host = input(f'[?]   🌍 GIT host (codeberg.org): ').strip() or f'codeberg.org'
+    git_username = input(f'[?]   🌍 Git username: ').strip()
+    git_host = input(f'[?]   🌍 Git host (github.com): ').strip() or f'github.com'
 
     project_repository = f'{git_username}/{project_slug}'
     project_repository_web = f'https://{git_host}/{git_username}/{project_repository}'
@@ -173,7 +173,7 @@ def main():
 
     write_file(f'./{project_slug}/.gitignore', GITIGNORE_TEMPLATE)
 
-    print(f'[*]   🌍 Initializing GIT repository...')
+    print(f'[*]   🌍 Initializing Git repository...')
 
     os.system(f'cd ./{project_slug}; git init')
     os.system(f'cd ./{project_slug}; git remote add origin {project_repository_ssh}')
