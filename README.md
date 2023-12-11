@@ -5,15 +5,15 @@ dl is a script for creating deep learning projects. It automates the following t
 - Extracting information from arXiv pages (title, author, etc).
 - Creating boilerplate files (README, LICENSE etc).
 - Creating Python packages using Poetry.
-- Initializing GIT repositories.
+- Initializing Git repositories.
 
 Installation 
 ------------
 
-Install with pip.
+Install with pipx.
 
 ```sh
-pip install git+https://github.com/oelin/dl
+pipx install git+https://github.com/oelin/dl
 ```
 
 Usage
@@ -41,8 +41,8 @@ $ dl 'https://arxiv.org/abs/2202.00273v2'
 [?]   🐌 Project slug (stylegan-xl):
 [?]   🧪 Project framework (PyTorch):
 [?]   🧩 Project dependencies (space separated): pillow
-[?]   🌍 GIT username (oelin):
-[?]   🌍 GIT host (codeberg.org): github.com
+[?]   🌍 Git username: oelin
+[?]   🌍 Git host (github.com):
 [-]   @project-title        = StyleGAN-XL
 [-]   @project-slug         = stylegan-xl
 [-]   @project-dependencies = pillow
